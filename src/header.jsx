@@ -17,10 +17,10 @@ const Header = () => {
           className="cursor-pointer w-7 md:w-10 md:hidden"
           onClick={handleClick}
         />
-        <nav className=" w-4/5 absolute z-20 shadow-2xl top-full bg-transparent md:shadow-none md:bg-none md:static md:w-auto md:block">
+        <nav className=" w-4/5 absolute z-20 shadow-2xl top-full  md:shadow-none  md:static md:w-auto md:block">
           <ul
-            className={`flex-col transition-all md:p-5 md:flex-row  h-0 overflow-hidden flex items-center justify-around uppercase gap-5 md:gap-10 text-[#242942] font-bold ${
-              open ? "flex-col h-[280px] p-5 " : ""
+            className={`flex-col transition-all md:p-5 md:flex-row md:bg-transparent md:!h-auto h-0 overflow-hidden flex items-center justify-around uppercase gap-5 md:gap-10 text-[#242942] font-bold ${
+              open && window.innerWidth < 768 ? "flex-col h-[280px] bg-white p-5 " : ""
             }`}
           >
             <li className=" cursor-pointer relative after:absolute after:bottom-0 after:left-0 after:w-0 after:bg-[#242942] after:transition-all after:h-[1px] hover:after:w-full ">
