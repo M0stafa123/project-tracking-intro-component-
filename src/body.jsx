@@ -7,6 +7,7 @@ const Body = () => {
           src="images/illustration-devices.svg"
           alt="devices"
           className=" absolute w-[500px] md:w-[570px] lg:w-[710px] xl:w-[1150px] max-w-none right-[-175px] lg:right-[-200px] xl:right-[-440px]"
+          rel="preload"
         />
       </section>
       <section className="p-8 max-w-[400px] lg:max-w-[700PX]">

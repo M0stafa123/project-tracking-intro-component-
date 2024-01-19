@@ -12,7 +12,6 @@ const Header = () => {
         <img src="images/logo.svg" alt="logo" className="w-7 md:w-10" />
         <img
           src={open ? closeM : openM}
-          // src="images/icon-hamburger.svg"
           alt="menu"
           className="cursor-pointer w-7 md:w-10 md:hidden"
           onClick={handleClick}
